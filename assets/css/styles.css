@@ -167,14 +167,26 @@ body {
   .missions {
     padding: 10px 0px 20px 50px;
   }
+
+  .job:hover {
+    border-right: 4px solid #782221;
+  }
   
   .diplome {
     padding: 20px;
   }
 
+  .diplome:hover {
+    border-right: 4px solid #782221;
+  }
+
   .Competence {
     padding: 20px;
     line-height: 1.2;
+  }
+
+  .Competence:hover {
+    border-right: 4px solid #782221;
   }
 
   footer {
