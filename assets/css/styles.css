@@ -23,6 +23,20 @@ body {
     margin: 0 auto;
   }
 
+  .ProfilPhoto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto 20px;
+    cursor: pointer;
+  }
+  
+  .ProfilPhoto:hover {
+    cursor: zoom-in;
+  }
+
   .contact {
     background-color: #2c1d27;
     font-size: 0.8em;
