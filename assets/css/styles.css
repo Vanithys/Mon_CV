@@ -1,223 +1,210 @@
+/* Reset des marges et des paddings de base pour tout le document */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  h1 h2 {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2em;
-    font-weight: 800;
-  }
-  
-  h1 {
-    font-weight: 400;
-  }
-  
-  h2 {
-    font-size: 1.2em;
-  }
-  
-  h3 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    padding: 20px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #f0f0f0;
-  }
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+}
 
-  body, p {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-  }
-  
-  header {
-    background-color: #782221;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    width: 1160px;
-    margin: 0 auto;
-  }
+/* Header Block */
+.header {
+  background-color: #782221;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 1160px;
+  margin: 0 auto;
+}
 
-  .ProfilPhoto {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 0 auto 20px;
-    cursor: pointer;
-  }
-  
-  .ProfilPhoto:hover {
-    cursor: zoom-in;
-  }
+/* Header Element */
+.header__profile-photo {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
 
-  .contact {
-    background-color: #2c1d27;
-    font-size: 0.8em;
-    font-style: italic;
-    color: white;
-    padding: 20px 30px;
-    width: 1160px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.header__profile-photo:hover {
+  cursor: zoom-in;
+}
 
-.contact-item p {
-    margin: 0;
-  }
-  
-  .contact-item a {
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  .contact-item a:hover {
-    text-decoration: underline;
-  }
+/* Contact Block */
+.contact {
+  background-color: #2c1d27;
+  font-size: 0.8em;
+  font-style: italic;
+  color: white;
+  padding: 20px 30px;
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .container {
-    display: flex;
-    flex: 1;
-    width: 1160px;
-    margin: 0 auto;
-    border-right: 2px solid #2c1d27;
-  }
+/* Contact Element */
+.contact__item {
+  margin: 0;
+}
 
-  .MainTitle {
-    background-color: #dbc2a4;
-    padding-left: 10px;
-    border-left: 5px solid #782221;
-  }
+.contact__link {
+  color: white;
+  text-decoration: none;
+}
 
-  aside {
-    flex: 1;
-    background-color: #782221;
-    padding-top: 20px;
-    padding-right: 40px;
-    
-  }
+.contact__link:hover {
+  text-decoration: underline;
+}
 
-  aside > p {
-    color: #f0f0f0;
-    font-size: 0.7em;
-  }
-  
-  aside > ul {
-    color: #f0f0f0;
-    font-size: 0.8em;
-  }
+/* Container Block */
+.container {
+  display: flex;
+  flex: 1;
+  width: 1160px;
+  margin: 0 auto;
+  border-right: 2px solid #2c1d27;
+}
 
-  .SideInfo {
-    background-color: #dbc2a4;
-    padding-left: 20px;
-  }
+/* Sidebar Block */
+.sidebar {
+  flex: 1;
+  background-color: #782221;
+  padding-top: 20px;
+  padding-right: 40px;
+}
 
-  #textside {
-    text-align: justify;
-    text-indent: 2.3em;
-    padding: 20px 20px 30px;
-  }
+/* Sidebar Elements */
+.sidebar__title {
+  font-family: 'Raleway bold', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  padding-left: 20px;
+  background-color: #dbc2a4;
+}
 
-  .List {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding: 20px 0px 30px 40px;
-  }
-  
-  .List li {
-    line-height: 1.3;
-  }
+.sidebar__text {
+  color: #f0f0f0;
+  font-size: 0.7em;
+  text-align: justify;
+  text-indent: 20px;
+  padding: 20px 20px 30px;
+}
 
-  main {
-    flex: 3;
-    background-color: #fff;
-    padding: 20px 20px 0px 20px;
-  }
+.sidebar__list {
+  color: #f0f0f0;
+  font-size: 0.8em;
+  padding: 20px 0 30px 40px;
+}
 
-  .poste {
-    padding: 20px 0px 0px 0px;
-  }
-  
-  .date {
-    padding-left: 0px;
-    font-style: italic;
-  }
-  
-  .missions {
-    padding: 10px 0px 20px 50px;
-  }
+.sidebar__list-item {
+  line-height: 1.3;
+}
 
-  .job:hover {
-    border-right: 4px solid #782221;
-  }
-  
-  .diplome {
-    padding: 20px;
-  }
+/* Content Block */
+.content {
+  flex: 3;
+  background-color: #fff;
+  padding: 20px;
+}
 
-  .diplome:hover {
-    border-right: 4px solid #782221;
-  }
+/* Content Elements */
+.content__title {
+  background-color: #dbc2a4;
+  padding-left: 10px;
+  border-left: 5px solid #782221;
+  font-family: 'Raleway bold', sans-serif;
+  font-size: 1.2em;
+}
 
-  .Competence {
-    padding: 20px;
-    line-height: 1.2;
-  }
+/* Job Element */
+.job {
+  padding: 20px 0 0 0;
+}
 
-  .Competence:hover {
-    border-right: 4px solid #782221;
-  }
+.job:hover {
+  border-right: 4px solid #782221;
+}
 
-  footer {
-    background-color: #782221;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    width: 1160px;
-    margin: 0 auto;
-    bottom: 0;
-  }
+.job__title {
+  font-family: 'Raleway bold', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+}
 
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .social-icon {
-    display: inline-block;
-    padding: 10px 0px;
-  }
-  
-  .social-img {
-    width: 32px;
-    height: 32px;
-    transition: opacity 0.3s ease;
-  }
-  
-  .social-img:hover {
-    opacity: 0.7;
-  }
+.job__date {
+  font-style: italic;
+}
 
-  @media (max-width: 1200px) {
-    .container, header, footer {
-        width: 100%;
-        margin: 0;
-    }
+.job__missions {
+  padding: 10px 0 20px 50px;
+}
+
+/* Diplôme Element */
+.diplome {
+  padding: 20px;
+}
+
+.diplome:hover {
+  border-right: 4px solid #782221;
+}
+
+/* Compétences Element */
+.competence {
+  padding: 20px;
+  line-height: 1.2;
+}
+
+.competence:hover {
+  border-right: 4px solid #782221;
+}
+
+/* Footer Block */
+.footer {
+  background-color: #782221;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 1160px;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+/* Footer Elements */
+.footer__social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer__social-icon {
+  padding: 10px 0;
+}
+
+.footer__social-img {
+  width: 32px;
+  height: 32px;
+  transition: opacity 0.3s ease;
+}
+
+.footer__social-img:hover {
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .container, .header, .footer {
+      width: 100%;
+      margin: 0;
   }
+}
